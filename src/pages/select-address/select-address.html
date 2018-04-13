@@ -1,0 +1,53 @@
+<!--
+  Generated template for the SelectTypePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+	
+  <ion-toolbar>
+    <ion-navbar>
+    <ion-title>Whats a Address?</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="primary" >Cancel</span>
+      </button>
+      <button ion-button (click)="next()">
+        <span ion-text color="primary" >Next</span>
+        <ion-icon name="next" ></ion-icon>
+      </button>
+    </ion-buttons>
+    </ion-navbar>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+
+
+	<ion-list>
+		<ion-item>
+		  <ion-label>Whats a Address?</ion-label>
+		  <ion-thumbnail item-start>
+		        <img src="/assets/imgs/whats.jpg">
+		  </ion-thumbnail>
+		</ion-item>
+		  <ion-item>
+		  		<button ion-button round (click)=myLocation() icon-only [outline]="!isMyLocation">
+			        <ion-icon name="locate" ></ion-icon>
+			        &nbsp;
+			        My Location
+			        &nbsp;
+		  		</button>
+		  		
+			    <button ion-button round (click)=outherLocation() icon-only [outline]="!isOutherLocation">
+			        <ion-icon name="locate" ></ion-icon>
+			        &nbsp;
+			        Outher Location
+			        &nbsp; 
+		  		</button>
+		    </ion-item>
+		
+	</ion-list>
+</ion-content>
